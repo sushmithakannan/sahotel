@@ -4,6 +4,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <style>
+  div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
 body
 {
   background-image:url("bg.jpeg");
@@ -36,9 +56,11 @@ li a {
   text-decoration: none;
 }
 
-li a:hover {
+li a:hover 
+  {
   background-color: #111;
-}</style>
+}
+</style>
 <body>
 <ul class="center">
 <li><a href="index.html">HOME</a></li>
@@ -48,13 +70,46 @@ li a:hover {
 <li><a href="fordelivery.html">FOR DELIVERY</a></li>
 <li><a href="contctus.html">CONTACT US</a></li>
 </ul>
-<table>
-<tr><td><img src="ragi.jpg" width="30%" height="10%"></img></td><td><img src="idly.jpg" width="60%" height="70%"></img></td></tr>
-<tr><td><strong>TRADITIONAL DOSA</td><td><strong>VARIETY IDLIES</td></tr>
-<tr><td><img src="paneer.jpg" width="40%" height="10%"></img></td><td><img src="sidedish.jpg" width="60%" height="40%"></img></td></tr>
-<tr><td><strong>FRESH PANEER</td><td><strong>BEST MASALA</td></tr>
-<tr><td><img src="yummy.jpg" width="50%" height="30%"></img></td><td><img src="special.jpg" width="50%" height="50%"></img></td></tr>
-<tr><td><strong>YUMMY, FILL YOUR TUMMY!!</td><td><strong>THE SPECIAL DISH</td></tr>
+<div class="gallery">
+  <a target="_blank" href="ragi.jpg">
+    <img src="ragi.jpg" alt="Ragi" width="600" height="400">
+  </a>
+  <div class="desc">Traditional Ragi Dosa</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="idly.jpg">
+    <img src="idly.jpg" alt="idly" width="600" height="400">
+  </a>
+  <div class="desc">Variety Topped Idlies</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="paneer.jpg">
+    <img src="paneer.jpg" alt="paneer" width="600" height="400">
+  </a>
+  <div class="desc">Spicy Paneer Masala</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="sidedish.jpg">
+    <img src="sidedish.jpg" alt="Sidedish" width="600" height="400">
+  </a>
+  <div class="desc">Best Gravy!!</div>
+</div>
+  <div class="gallery">
+  <a target="_blank" href="yummy.jpg">
+    <img src="yummy.jpg" alt="yummy" width="600" height="400">
+  </a>
+  <div class="desc">Taste The Best</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="special.jpg">
+    <img src="special.jpg" alt="Special" width="600" height="400">
+  </a>
+  <div class="desc">Today's Special</div>
+</div>
 <div id="footer">
 <table style="margin-left:80px" cellpadding="20px" cellspacing="20px" background-color="rgb(36, 125, 197)">
 <tr>
